@@ -102,6 +102,7 @@ export default function QliUser() {
   const reloadData = () =>{
     setLoadData(!loadData);
   }
+  console.log(loadData);
   if(userFilter){
   return (
     <div className='bg-qliphim'>

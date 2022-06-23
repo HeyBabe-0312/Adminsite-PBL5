@@ -20,7 +20,7 @@ export default function EditUser({infoEdit,modalClose,userData,roleData,reloadDa
   }
   const editUser = async (data) => {
     await axios.put('/user/update',data);
-    reloadData();
+    await reloadData();
     window.alert("User updated successfully!");
     }
   if(infoEdit){
