@@ -42,6 +42,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
       return el.Status.localeCompare("OFF")===0;
     })
     if(emptyRoom.length!==0) {
+      getDataTimeLC(emptyRoom[0].Room_Id);
       await axios.post('/lc/add',dataTimeLC);
       var lcList = await axios.get("/lc/list");
       const dataRoom = {
@@ -49,7 +50,6 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
         Id_lich_chieu: lcList.data.result[lcList.data.result.length-1].id,
         Room_Id: emptyRoom[0].Room_Id
       }
-      getDataTimeLC(emptyRoom[0].Room_Id);
       await axios.put('/room/update',dataRoom);
       window.alert("Added successfully!");
       window.location.reload();
