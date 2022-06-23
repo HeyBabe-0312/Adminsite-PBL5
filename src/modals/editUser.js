@@ -21,6 +21,7 @@ export default function EditUser({infoEdit,modalClose,userData,roleData,reloadDa
   const editUser = async (data) => {
     await axios.put('/user/update',data);
     window.alert("User updated successfully!");
+    reloadData();
     }
   if(infoEdit){
     role === 2? document.getElementById("womanRadioCheck").checked = true : document.getElementById("manRadioCheck").checked = true;
@@ -94,7 +95,7 @@ const updateUser = () => {
             </tr>
         </tbody></div>
       </form>
-      <a className="button1" onClick={function(event){getDataUser();updateUser();reloadData()}} >Save</a>
+      <a className="button1" onClick={function(event){getDataUser();updateUser()}} >Save</a>
     </div>
   </div>
   )}
@@ -134,7 +135,7 @@ const updateUser = () => {
             </tr>
           </tbody></div>
         </form>
-        <a className="button1" onClick={function(event){getDataUser();updateUser();reloadData()}} >Save</a>
+        <a className="button1" onClick={function(event){getDataUser();updateUser()}} >Save</a>
       </div>
     </div>
     )
