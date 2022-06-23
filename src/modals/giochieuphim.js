@@ -8,6 +8,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
   const [infoDetailGC,setGC] = useState(false);
   const [dataLC,setDataLC] = useState(null);
   const [timeGCPhim,setTimeGCPhim] = useState(null);
+  const [addLoad, setAddLoad] = useState(false);
   const changeGC = (val,id) => {
     setGC(val);
     setTimeGCPhim(id);
@@ -19,7 +20,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
       })
     }
     getDataLC();
-  },[])
+  },[addLoad])
   var timeLC="";
   var dataTimeLC;
   const getData = () =>{
@@ -52,7 +53,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
       }
       await axios.put('/room/update',dataRoom);
       window.alert("Added successfully!");
-      window.location.reload();
+      setAddLoad(!addLoad);
     }
     else{
       window.alert("The room is out, check again!");

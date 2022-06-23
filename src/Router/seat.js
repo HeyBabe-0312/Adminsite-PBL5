@@ -1,7 +1,7 @@
 import React from 'react'
 import SeatNum from './seatNum'
 
-const Seat = ({seatId,seatName,clickFunc,closeRoom}) => {
+const Seat = ({seatId,seatName}) => {
  
   return (
     <div class="row">

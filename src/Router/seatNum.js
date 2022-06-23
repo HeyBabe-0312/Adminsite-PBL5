@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react'
 import axios from 'axios'
 
-const SeatNum = ({seatId,seatName,clickFunc,closeRoom}) => {
+const SeatNum = ({seatId,seatName}) => {
   const [dataSeatCol, setDataCol] = useState(null);
   // const [activeList, setActiveList] = useState([]);  //
   // useEffect(()=> {                                   //
