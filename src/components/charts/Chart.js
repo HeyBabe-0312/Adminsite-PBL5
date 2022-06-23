@@ -37,7 +37,7 @@ var arrDayOfWeek = [];
 for(let i = 7; i < 84; i++){
   var days = new Date();
   days.setDate(days.getDate()-i);
-  arrDayOfWeek.push(xuliDay(days));
+  arrDayOfWeek.push(days.toLocaleDateString('fr-CA'));
 }
 var todayV = [], yesterdayV = [], yesterday2V = [], yesterday3V = [], yesterday4V = [], yesterday5V = [], yesterday6V = [];
 var lastMV = [], lastMV1 = [], lastMV2 = [], lastMV3 = [], lastMV4 = [], lastMV5 =[], lastMV6 = [], lastMV7 = [], lastMV8 = [], lastMV9 = [], lastMV10 = [], lastMV11 = [];
@@ -216,67 +216,67 @@ export default function Chart({typeR,dataVenue}) {
       mSum += d.so_tien;
     }); setMonthV(mSum);
     lastMV1 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV1.map((d)=>{
       mSum1 += d.so_tien;
     }); setMonthV1(mSum1);
     lastMV2 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth2).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth2.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV2.map((d)=>{
       mSum2 += d.so_tien;
     }); setMonthV2(mSum2);
     lastMV3 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth3).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth3.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV3.map((d)=>{
       mSum3 += d.so_tien;
     }); setMonthV3(mSum3);
     lastMV4 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth4).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth4.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV4.map((d)=>{
       mSum4 += d.so_tien;
     }); setMonthV4(mSum4);
     lastMV5 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth5).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth5.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV5.map((d)=>{
       mSum5 += d.so_tien;
     }); setMonthV5(mSum5);
     lastMV6 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth6).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth6.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV6.map((d)=>{
       mSum6 += d.so_tien;
     }); setMonthV6(mSum6);
     lastMV7 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth7).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth7.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV7.map((d)=>{
       mSum7 += d.so_tien;
     }); setMonthV7(mSum7);
     lastMV8 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth8).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth8.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV8.map((d)=>{
       mSum8 += d.so_tien;
     }); setMonthV8(mSum8);
     lastMV9 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth9).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth9.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV9.map((d)=>{
       mSum9 += d.so_tien;
     }); setMonthV9(mSum9);
     lastMV10 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth10).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth10.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV10.map((d)=>{
       mSum10 += d.so_tien;
     }); setMonthV10(mSum10);
     lastMV11 = dataVenue.result.filter(function (el) {
-      return xuliDay(el.ngay).toString().substring(0,10).indexOf(xuliDay(lastmonth11).substring(0,7).substring(0, 7)) > -1;
+      return xuliDay(el.ngay).toString().substring(0,10).indexOf(lastmonth11.toLocaleDateString('fr-CA').substring(0,7).substring(0, 7)) > -1;
     });
     lastMV11.map((d)=>{
       mSum11 += d.so_tien;
@@ -404,13 +404,18 @@ export default function Chart({typeR,dataVenue}) {
     </div>
   );
 }
-
 function xuliDay(val){
-  var year = val.substring(0,4);
-  var month = val.substring(5,7);
-  var dt = val.substring(8,10);
+  var date = new Date(val);
+  var year = date.getFullYear();
+  var month = date.getMonth()+1;
+  var dt = date.getDate();
   
+  if (dt < 10) {
+    dt = '0' + dt;
+  }
+  if (month < 10) {
+    month = '0' + month;
+  }
   var day = year+'-' + month + '-'+dt;
-  console.log(day);
   return(day);
 }
