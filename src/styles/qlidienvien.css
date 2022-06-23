@@ -1,0 +1,54 @@
+.bg-qlidv{
+    padding-top: 90px;
+    height: auto;
+    min-height: 790px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #D7DAEB;
+}
+.item-container{
+    width: 1060px;
+    padding: 30px 40px 40px 40px;
+    height: auto;
+    background-color: #e4b02e;
+    margin: auto;
+    border: 2px solid rgb(81, 81, 81);
+    box-shadow: 0 3px 7px rgb(73, 73, 73);
+    margin-bottom: 40px;
+}
+.title-film-actor{
+    margin-bottom: 10px;
+    width: 987px;
+    padding: 0 10px 0 0;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.icon-add-actor{
+    position: relative;
+    top:4px;
+    float: right;
+}
+.icon-add-actor:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: 0.5s all;
+}
+.ava-actor{
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+.btn-load-date{
+    padding: 1.5px 7px 4px 7px;
+    margin-left: 5px;
+    border: #000 1px solid;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+.btn-load-date:hover{
+    background-color: #D7DAEB;
+    transition: 0.5s all;
+}

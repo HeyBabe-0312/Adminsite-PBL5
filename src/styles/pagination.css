@@ -1,0 +1,40 @@
+.pagination {
+  margin-left: 980px;
+  display: block;
+  float: left;
+  text-align: center;
+  width: 21%;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.pagination a.active {
+  background-color: lightblue;
+  color: rgb(116, 116, 116);
+  border-radius: 5px;
+  border: black solid 1px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+  
+}
+#myShow {
+  padding: 12px ;
+  display: initial;
+  width: 8%;
+  font-size: 16px; 
+  background-color: lightblue;
+  border: 1px solid #ddd;  
+  margin-right: 1.4%;
+}
+#myShow:hover{
+  background-color: #71dae4;
+  border: 1px solid black;
+}

@@ -1,0 +1,36 @@
+.ava-post1{
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    position: relative;
+    top: -1px
+}
+.info-detail{
+    width: 390px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.detail-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 206.6px;
+    white-space: nowrap;
+    overflow:hidden;
+    color: #000;
+    text-overflow: ellipsis;
+}
+.detail-text{
+    width: 390px;
+    height: auto;
+}
+.school-text,
+.address-text{
+    color: #000;
+    margin-bottom: 10px;
+    width: 210px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}

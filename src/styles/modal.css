@@ -1,0 +1,369 @@
+
+.bg-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	z-index: 1040;
+	top: 0;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.bg-cinema{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	z-index: 1040;
+	top: 0;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.bg-history{
+	width: 100%;
+	height: 100%;
+	z-index: 1040;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	top: 0;
+	padding-left: 430px;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.bg-mess{
+	width: 100%;
+	height: 100%;
+	z-index: 1040;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	top: 0;
+	margin-top: 30px;
+    margin-right: 30px;
+	justify-content: right;
+	align-items: right;
+	display: none;
+}
+/* .bg-detail{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	top: 0;
+	margin-top: 30px;
+	justify-content: right;
+	align-items: center;
+	display: none;
+} */
+.modal-editAdmin{
+	width: 480px;
+	height: 470px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-content{
+	width: 450px;
+	height: 510px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-changePW{
+	width: 450px;
+	height: 380px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-room{
+	width: 850px;
+	height: 670px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-cinema{
+	width: 850px;
+	height: 670px;
+	background-color: #9496BC;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-giochieu{
+	width: 600px;
+	height: 400px;
+	background-color: #9496BC;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-giochieu0{
+	width: 600px;
+	height: 400px;
+	background-color: #9496BC;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	margin-left: 430px;
+	position: relative;
+}
+.modal-film{
+	width: 1000px;
+	height: 600px;
+	background-color: #9496BC;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-detail{
+	width: 400px;
+	height: 500px;
+	background-color: #CC9D9D;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	justify-content: right;
+	align-items: center;
+	margin-left: 30px;
+}
+.modal-detailGC{
+	width: 400px;
+	height: 205px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	justify-content: right;
+	align-items: center;
+	margin-left: 30px;
+}
+.modal-history{
+	width: 630px;
+	height: 700px;
+	background-color: #9496BC;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 32px 20px 32px;
+	position: relative;
+}
+.mess-title{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    width: 500px;
+    text-align: left;
+    padding: 10px;
+    color: #9E4242;
+}
+.send-btn{
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+}
+.form-mess{
+    float: left;
+    padding: 0 20px 10px 20px;
+}
+.form-mess textarea:focus{
+    box-shadow: 5px 5px #9E4242;
+}
+.form-mess textarea:hover{
+    cursor:grab;
+    transform: scale(1.05);
+    transition: 0.5s all;
+}
+.send-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+.modal-info-user-post{
+	width: 350px;
+	height: auto;
+	background-color: #edb730;
+	border-radius: 14px;
+	text-align: left;
+	padding: 20px;
+	margin-left: 90px;
+	position: absolute;
+	z-index: 1;
+	justify-content: right;
+	align-items: center;
+	margin-top: 15px;
+}
+.modal-messeger{
+    margin-top: 40px;
+    width: 450px;
+	height: 300px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: fixed;
+    margin-right: 30px;
+}
+.modal-user{
+	width: 480px;
+	height: 450px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-edit{
+	width: 520px;
+	height: 650px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-addGame{
+	width: 530px;
+	height: 680px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 20px 20px 0;
+	position: relative;
+}
+.modal-addActor{
+	width: 530px;
+	height: 390px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 20px 20px 0;
+	position: relative;
+}
+.modal-editFilm{
+	width: 530px;
+	height: 680px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 20px 20px 0;
+	position: relative;
+}
+.modal-editActor{
+	width: 530px;
+	height: 400px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 20px 20px 0;
+	position: relative;
+}
+.modal-editUser{
+	width: 500px;
+	height: 440px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-mess{
+	width: 510px;
+	height: 490px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-dev{
+	width: 500px;
+	height: 640px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-game{
+	width: 540px;
+	height: 640px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-LB{
+	width: 500px;
+	height: 670px;
+	background-color: rgb(207, 244, 253);
+	border-radius: 10px;
+	text-align: center;
+	padding: 8px;
+	position: relative;
+}
+/* .info{
+	width: 15px;
+	display:contents;
+	float: middle;
+	padding: 3px 25px;
+	text-decoration: none;
+} */
+.editbtn{
+	width: 15px;
+	display: initial;
+	float: left;
+	padding: 3px 25px;
+}
+.close{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 35px;
+	Cursor: pointer;
+}
+.close:hover{
+	transform: rotate(45deg);
+	transition: 0.5s all;
+}
+.button1 {
+	background-color: rgb(123, 231, 243);
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+}
+.button1:hover {
+	cursor: pointer;
+		background-color: rgb(180, 245, 245);
+		color: #3ddef0;
+		border: 2px solid #3ddef0;
+		
+	}
+textarea{
+	resize: none;
+	padding: 5px;
+}

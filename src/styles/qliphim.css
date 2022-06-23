@@ -1,0 +1,304 @@
+.bg-qliphim{
+    height: 790px;
+}
+main {
+    background: #D7DAEB;
+    grid-area: main;
+    overflow-y: auto;
+  }
+  #myInput {
+    background-image: url('https://cdn.iconscout.com/icon/free/png-256/search-2235191-1872847.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-size: 20px;
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+     margin-left: 420px;
+     margin-top: 100px;
+    font-size: 16px; 
+    width: 600px;
+    padding: 12px 20px 12px 50px; 
+    margin-bottom: 40px; 
+    display: block;
+   float: left;
+   align-items: center;
+   background-color: #FFC632;
+   border: 1px solid #000;
+  }
+  #myInput:hover{
+    transform: scale(1.05);
+    transition: .5s all;
+  }
+  #myTimeLC1 {
+    font-size: 16px; 
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 380px;
+    padding: 12px 20px 12px 20px; 
+    margin-bottom: 20px; 
+    display: block;
+   float: left;
+   align-items: center;
+   background-color: #cbcbcb;
+   border: 1px solid #000;
+  }
+  #myTimeLC1:hover{
+    transform: scale(1.02);
+    transition: .5s all;
+  }
+  .btn1{
+    margin-top: 100px;
+    margin-left: 1180px;
+    padding: 8px ;
+    display: inline-block;
+    width: 90px;
+    font-size: 16px; 
+    color: rgb(110, 110, 110);
+    background-color: #FFC632;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  .btn0{
+    margin-top: 10px;
+    padding: 8px ;
+    float: left;
+    margin-left: 30px;
+    width: 60px;
+    font-size: 16px; 
+    color: rgb(110, 110, 110);
+    background-color: #cbcbcb;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  .btn1:active {
+    transform: scale(0.8) translate(-0.5%, -0.5%);
+  }
+  .btn0:active {
+    transform: scale(0.8) translate(-0.5%, -0.5%);
+  }
+  .btn1:hover {background-color: #d9ca66;}
+  .bg-carousel{
+      width: 1000px;
+      margin: auto;
+      margin-top: 20px;
+      height: 530px;
+      background-color: #EAEAEA;
+      border: 1px solid #000;
+  }
+  .bg-film-item1{
+    background-color: #414141;
+    width: 960px;
+    height: 380px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    
+  }
+  .bg-film-item2{
+    background-color: #414141;
+    width: 960px;
+    height: 150px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+  .close-film{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 35px;
+    Cursor: pointer;
+  }
+  .close-film:hover{
+    transform: rotate(45deg);
+    transition: 0.5s all;
+  }
+  .close-film0{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    font-size: 35px;
+    Cursor: pointer;
+    transform: rotate(45deg);
+    color: rgb(213, 54, 54);
+  }
+  .close-film0:hover{
+    transform: none;
+    transition: 0.5s all;
+  }
+  .image-film{
+    width: 375px;
+    height: 250px;
+    float: left;
+    margin-top: 20px;
+  }
+  .img-film{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+  .image-film iframe{
+       box-sizing: border-box;
+      background-size: contain;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+  }
+  .btn-trailer{
+    padding: 8px 12px;
+    background-color: #D2D2D2;
+    margin-top: 10px;
+  }
+  .btn-trailer0{
+    padding: 8px 12px;
+    background-color: #D2D2D2;
+    margin-top: 10px;
+  }
+  .btn-trailer0:hover{
+    cursor: pointer;
+    background-color: #FFC632;
+  }
+  .btn-trailer:hover{
+    cursor: pointer;
+    background-color: #FFC632;
+  }
+  .info-film1{
+    padding-top: 0px;
+    padding-left: 30px;
+    width: 550px;
+    height: 30px;
+    float: right;
+    text-align: left;
+    color: #fff;
+  }
+  .info-film2{
+    width: 550px;
+    overflow-y: scroll;
+    height: 280px;
+    margin-top: 20px;
+    padding-left: 30px;
+    float: right;
+    color: #fff;
+    text-align: justify;
+  }
+  .title-film{
+    margin-right: 35px;
+  }
+  .title-film0{
+    width:170px;
+    display:flex;
+    float: left;
+    height:30px;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow:hidden;
+    margin-right: 30px;
+    text-overflow: ellipsis;
+    transition-duration: 5s;
+  }
+  .title-film0:hover{
+    overflow-x: scroll;
+  }
+  .title-info{
+    font-size: 15px;
+    width: 510px;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .text-info{
+    font-size: 15px;
+    color: #D2D2D2;
+  }
+  .title-lichchieu{
+    float: left;
+    font-size: 20px;
+    color: #fff;
+  }
+  .icon-film:hover{
+    transition: .5s all;
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+  .lichchieu{
+    float: left;
+    margin-top: 40px;
+  }
+  .item-lichchieu{
+    height: 20px;
+    width: 50px;
+    background-color: #ddd;
+    margin-left: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  .item-lichchieu:hover{
+    cursor: pointer;
+  }
+  .sunday{
+    background-color: #FFC632;
+  }
+  .list-giochieu{
+    background-color: #cbcbcb;
+    width: 550px;
+    height: 280px;
+    margin: auto;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  .item-giochieu{
+    background-color: #9496BC;
+    padding: 10px 15px 10px 15px;
+    box-shadow: 2px 2px #414141;
+    width: 147px;
+    height: 40px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  .item-giochieu:hover{
+    transform: scale(1.08);
+    transition: 0.5s all;
+    cursor: pointer;
+  }
+  .imagee{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 100px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px #000;
+}
+.imagee:hover {
+    transform: scale(1.3); }
+    #fileImg::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+    #fileImg::before {
+      content: 'Select some files';
+      display: inline-block;
+      background: linear-gradient(top, #f9f9f9, #e3e3e3);
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 8px 20px;
+      margin-left: 50px;
+      outline: none;
+      white-space: nowrap;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      font-weight: 700;
+      font-size: 10pt;
+      width: 100px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    #fileImg:hover::before {
+      border-color: black;
+      background-color: lightblue;
+    }
+    #fileImg:active::before {
+      background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    }
+  .icon-GC:hover{
+  transform: scale(1.08);
+  transition: 0.5s all;
+  }

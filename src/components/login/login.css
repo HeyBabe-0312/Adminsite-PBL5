@@ -1,0 +1,171 @@
+.main{
+    background: #FFC632;
+    height: 791px;
+    padding-top: 100px;
+    width: auto;
+}
+.login-box{
+    width: 1100px;
+    height: 600px;
+    background-color: #787878;
+    margin: auto;
+    border:1px solid #383838;
+    box-shadow: 10px 10px #6a6969;
+}
+.logo{
+    width:700px; 
+    height:600px;
+    overflow: hidden;
+    float: left;
+    border: 0 1px solid #383838;
+    margin: 0;
+}
+.logo .image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url("../../assets/meta-logo.gif");
+    transition: 0.5s all ease-in-out;
+}
+.logo:hover .image{
+    transform: scale(1.1);
+}
+.login-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 34px;
+    font-weight: bolder;
+    margin-top: 160px;
+    margin-left: 0;
+}
+.login-title:hover{
+    transform: scale(1.1);
+    transition: 0.5 all;
+    color: #5f009e;
+}
+.login-text{
+    float: right;
+    width: 398px;
+    height: inherit;
+    background-color: beige;
+    text-align: center;
+}
+.text-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input100{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #666;
+    display: block;
+    width: 80%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 62px;
+    margin-left: 35px;
+}
+.input100::placeholder{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.input100:focus{
+    box-shadow: 3px 3px #5f009e;
+    transition: all .4s;
+}
+.input100:hover{
+    transform: scale(1.05);
+    transition: all .4s;
+}
+.focus-input100{
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0;
+    color: rgba(87,184,70,.8);
+}
+.symbol-input100 {
+    font-size: 15px;
+    margin-left: 25px;
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666;
+    /* -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s; */
+    transition: all .4s;
+}
+.text-box:hover .symbol-input100{
+    transform: scale(1.05);
+    transition: 0.5 all;
+    color: #5f009e;
+}
+.text-box:hover .input100::placeholder{
+    color: #5f009e;
+}
+input,
+button{
+    outline: none;
+    border: none;
+}
+.container-login100{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+.login100-form-btn{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #5f009e;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+.login100-form-btn:hover{
+    cursor: pointer;
+    background: #a38025;
+}
+.login100-form-btn:active{
+    transform: scale(0.9) translate(-0.5%, -0.5%);
+}
