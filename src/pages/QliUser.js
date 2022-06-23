@@ -99,6 +99,9 @@ export default function QliUser() {
         setRoleData(response.data);
       });
   }
+  const reloadData = () =>{
+    setLoadData(!loadData);
+  }
   if(userFilter){
   return (
     <div className='bg-qliphim'>
@@ -122,7 +125,7 @@ export default function QliUser() {
      </table>
      {idHistory===1?<HistoryUser openHis={infoHis} modalCloseHis={closeHis} idHis={1}/>:<HistoryUser openHis={infoHis} modalCloseHis={closeHis} idHis={idHistory}/>}
      <PaginationTest postsPerPage={postsPerPage} totalPosts={userFilter.length} paginate={paginate} search={search} searchDone={searchDone}/>
-     <EditUser infoEdit={infoEdit} modalClose={closeEdit} userData={user} roleData={roleData}/>
+     <EditUser infoEdit={infoEdit} modalClose={closeEdit} userData={user} roleData={roleData} reloadData={reloadData}/>
     </div>
   </div>
   )}

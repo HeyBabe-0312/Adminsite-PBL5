@@ -129,7 +129,6 @@ function xuliDate(val){
   const AddNewMess = async (data) => {
     await axios.post('/tb/add',data);
     window.alert("Send mess to user successfully!");
-    window.location.reload();
   }
   async function yourFunction(){
     var listRoom = await axios.get('/room/list');

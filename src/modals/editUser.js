@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-export default function EditUser({infoEdit,modalClose,userData,roleData}) {
+export default function EditUser({infoEdit,modalClose,userData,roleData,reloadData}) {
   var userName="",number="";
   var dataUser;
   var role = roleData?roleData.result!==null?roleData.result[0].per_id:2:2;
@@ -20,8 +20,8 @@ export default function EditUser({infoEdit,modalClose,userData,roleData}) {
   }
   const editUser = async (data) => {
     await axios.put('/user/update',data);
+    reloadData();
     window.alert("User updated successfully!");
-    window.location.reload();
     }
   if(infoEdit){
     role === 2? document.getElementById("womanRadioCheck").checked = true : document.getElementById("manRadioCheck").checked = true;
