@@ -109,7 +109,6 @@ export default function QliUser() {
           <input type="text" autoComplete='off' id="myInputUser" onKeyDown={_handlerClickEnter} placeholder=" Tìm kiếm user " />
         </div>
         <AiOutlineReload size={30} className="btn-reload" onClick={function(e) {reloadData()}}/>
-    
     <div className='bg-table'>
      <table id="myTable">
        <tbody>

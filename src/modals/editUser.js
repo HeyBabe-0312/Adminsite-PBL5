@@ -20,7 +20,6 @@ export default function EditUser({infoEdit,modalClose,userData,roleData,reloadDa
   }
   const editUser = async (data) => {
     await axios.put('/user/update',data);
-    await reloadData();
     window.alert("User updated successfully!");
     }
   if(infoEdit){
@@ -95,7 +94,7 @@ const updateUser = () => {
             </tr>
         </tbody></div>
       </form>
-      <a className="button1" onClick={function(event){getDataUser();updateUser()}} >Save</a>
+      <a className="button1" onClick={function(event){getDataUser();updateUser();reloadData()}} >Save</a>
     </div>
   </div>
   )}
@@ -135,7 +134,7 @@ const updateUser = () => {
             </tr>
           </tbody></div>
         </form>
-        <a className="button1" onClick={function(event){getDataUser();updateUser()}} >Save</a>
+        <a className="button1" onClick={function(event){getDataUser();updateUser();reloadData()}} >Save</a>
       </div>
     </div>
     )
