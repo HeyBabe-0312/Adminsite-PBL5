@@ -8,8 +8,8 @@ export default function ListGioChieu({openGC,time,timeFilm,idGC}) {
   )
 }
 function getTime(val,valFilm){
-    var hour = parseInt(val.substring(0,2));
-    var minute = parseInt(val.substring(3,5));
+    var hour = parseInt(val.substring(10,12));
+    var minute = parseInt(val.substring(13,15));
     var subHour = parseInt(valFilm.substring(0,2));
     var subMinute = parseInt(valFilm.substring(3,5));
     var hourEnd = hour + subHour;
