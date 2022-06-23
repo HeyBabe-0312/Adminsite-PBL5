@@ -2,13 +2,13 @@ import React,{useState, useEffect} from 'react';
 import "./chart.css";
 import { Line } from "react-chartjs-2";
 
-var today =  xuliDay(new Date((new Date()).valueOf()));
-var yesterday = xuliDay(new Date((new Date()).valueOf() - 86400000));
-var yesterday2 = xuliDay(new Date((new Date()).valueOf() - 172800000));
-var yesterday3 = xuliDay(new Date((new Date()).valueOf() - 259200000));
-var yesterday4 = xuliDay(new Date((new Date()).valueOf() - 345600000));
-var yesterday5 = xuliDay(new Date((new Date()).valueOf() - 432000000));
-var yesterday6 = xuliDay(new Date((new Date()).valueOf() - 518400000));
+var today =  new Date((new Date()).valueOf()).toLocaleDateString('fr-CA');
+var yesterday = new Date((new Date()).valueOf() - 86400000).toLocaleDateString('fr-CA');
+var yesterday2 = new Date((new Date()).valueOf() - 172800000).toLocaleDateString('fr-CA');
+var yesterday3 = new Date((new Date()).valueOf() - 259200000).toLocaleDateString('fr-CA');
+var yesterday4 = new Date((new Date()).valueOf() - 345600000).toLocaleDateString('fr-CA');
+var yesterday5 = new Date((new Date()).valueOf() - 432000000).toLocaleDateString('fr-CA');
+var yesterday6 = new Date((new Date()).valueOf() - 518400000).toLocaleDateString('fr-CA');
 var lastmonth = new Date();
 lastmonth.setMonth(lastmonth.getMonth()-1);
 var lastmonth2 = new Date();
@@ -405,11 +405,16 @@ export default function Chart({typeR,dataVenue}) {
   );
 }
 function xuliDay(val){
-  var date = new Date(val);
-  var year = date.substring(0,4);
-  var month = date.substring(5,7);
-  var dt = date.substring(8,10);
-
+  var year = val.substring(0,4);
+  var month = val.substring(5,7);
+  var dt = val.substring(8,10);
+  
+  if (dt < 10) {
+    dt = '0' + dt;
+  }
+  if (month < 10) {
+    month = '0' + month;
+  }
   var day = year+'-' + month + '-'+dt;
   return(day);
 }
