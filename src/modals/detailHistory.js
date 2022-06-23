@@ -32,5 +32,21 @@ export default function DetailHistory({infoDetail,idGD,mnGD}) {
             </div>
         </div>
     </div>
-  )}}
+  )}else{
+    return (
+      <div style={{display: infoDetail ? 'flex' : 'none' }}>
+          <div className="modal-detail" >
+              <h3 style={{color: "white"}}>CHI TIẾT HÓA ĐƠN</h3>
+              <div className='detail-up'>
+              </div>
+              <div className='detail-down'>
+                  <hr className='hr-class'/>
+                  <br/>
+                  <a className='detail-left'>Tổng</a>
+                  <a className='detail-right'>0.000</a>
+              </div>
+          </div>
+      </div>
+    )}
+}
 }
