@@ -100,7 +100,7 @@ export default function QliUser() {
       });
   }
   const reloadData = () =>{
-    setLoadData(!loadData);
+    setDataUser(userData.result); setSearch(true);setCurrentPage(1);
   }
   if(userFilter){
   return (
@@ -108,7 +108,7 @@ export default function QliUser() {
         <div className='autocomplete'>
           <input type="text" autoComplete='off' id="myInputUser" onKeyDown={_handlerClickEnter} placeholder=" Tìm kiếm user " />
         </div>
-        <AiOutlineReload size={30} className="btn-reload" onClick={function(e) {reloadData()}}/>
+        <AiOutlineReload size={30} className="btn-reload" onClick={function(e) {setLoadData(!loadData);}}/>
     <div className='bg-table'>
      <table id="myTable">
        <tbody>
