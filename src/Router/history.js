@@ -12,32 +12,18 @@ export default function HistoryBuy({hoverChange,idGD,dateGD,mnGD}) {
   )
 }
 function xuliDay(val){
-  var date = new Date(val);
-  var year = date.getFullYear();
-  var month = date.getMonth()+1;
-  var dt = date.getDate();
+  var year = val.substring(0,4);
+  var month = val.substring(5,7);
+  var dt = val.substring(8,10);
   
-  if (dt < 10) {
-    dt = '0' + dt;
-  }
-  if (month < 10) {
-    month = '0' + month;
-  }
-  var day = dt+'-' + month + '-'+year;
+  var day = year+'-' + month + '-'+dt;
   return(day);
 }
 function xuliDate(val){
-  var date = new Date(val);
-  var hour = date.getHours();
-  var minute = date.getMinutes();
+  var hour = val.substring(11,13);
+  var minute = val.substring(14,16);
   
-  if (hour < 10) {
-    hour = '0' + hour;
-  }
-  if (minute < 10) {
-    minute = '0' + minute;
-  }
-  var daytime = hour+'h'+ minute;
+  var daytime = hour+':'+ minute;
   return(daytime);
 }
 
