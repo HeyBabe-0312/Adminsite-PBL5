@@ -39,6 +39,9 @@ export default function QliUser() {
     setCurrentPage(pageNumber);
     setLoadSearchData(!loadSearchData);
   }
+  const reloadData = () =>{
+    setLoadData(!loadData);
+  }
   const searchDone = () => setSearch(false);
   useEffect(() => {
     const getAllUser = async () => {
@@ -99,11 +102,6 @@ export default function QliUser() {
         setRoleData(response.data);
       });
   }
-  const reloadData = () =>{
-    setLoadData(!loadData);
-    setLoadData(!loadData);
-  }
-  console.log(loadData);
   if(userFilter){
   return (
     <div className='bg-qliphim'>
