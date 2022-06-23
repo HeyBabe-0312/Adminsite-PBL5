@@ -405,11 +405,11 @@ export default function Chart({typeR,dataVenue}) {
   );
 }
 function xuliDay(val){
+  console.log(val);
   var date = new Date(val);
-  console.log(date);
-    var year = val.substring(0,4);
-  var month = val.substring(5,7);
-  var dt = val.substring(8,10);
+  var year = date.getFullYear();
+  var month = date.getMonth()+1;
+  var dt = date.getDate();
   
   if (dt < 10) {
     dt = '0' + dt;
