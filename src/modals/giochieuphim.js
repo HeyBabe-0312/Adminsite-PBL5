@@ -156,7 +156,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
         <div className='list-giochieu'>
         {React.Children.toArray(
             newArray.map(d =>(
-            <ListGioChieu openGC={changeGC} time={xuliDate(d.thoi_gian_chieu)} timeFilm={timeFilm} idGC={d.id}/>
+            <ListGioChieu openGC={changeGC} time={d.thoi_gian_chieu} timeFilm={timeFilm} idGC={d.id}/>
             )))}
         </div>
     </div>
