@@ -411,5 +411,6 @@ function xuliDay(val){
   var dt = val.substring(8,10);
   
   var day = year+'-' + month + '-'+dt;
+  console.log(day);
   return(day);
 }
