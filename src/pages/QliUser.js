@@ -15,6 +15,7 @@ export default function QliUser() {
   const [user, getDataUser] = useState(null);
   const [roleData, setRoleData] = useState(null);
   const [loadData, setLoadData] = useState(false);
+  const [updateLoad, setUpdateLoad] = useState(false);
 
   const [infoHis, setStateHis] = useState(false);
   const openHis = (value,id) => {
@@ -40,7 +41,7 @@ export default function QliUser() {
     setLoadSearchData(!loadSearchData);
   }
   const reloadData = () =>{
-    setLoadData(!loadData);
+    setUpdateLoad(!updateLoad);
   }
   const searchDone = () => setSearch(false);
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function QliUser() {
       if(userData) setDataUser(userData.result); setSearch(true);setCurrentPage(1);
     }
     refreshData();
-  },[loadData])
+  },[loadData,updateLoad])
   useEffect(()=>{
     const searchUser = () => {
       const indexOfLastPost = currentPage * postsPerPage;
