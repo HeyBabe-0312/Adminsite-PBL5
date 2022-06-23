@@ -156,7 +156,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
         <div className='list-giochieu'>
         {React.Children.toArray(
             newArray.map(d =>(
-            <ListGioChieu openGC={changeGC} time={d.thoi_gian_chieu} timeFilm={timeFilm} idGC={d.id}/>
+            <ListGioChieu openGC={changeGC} time={xuliDate(d.thoi_gian_chieu)} timeFilm={timeFilm} idGC={d.id}/>
             )))}
         </div>
     </div>
@@ -181,16 +181,9 @@ function xuliDay(val){
   return(day);
 }
 function xuliDate(val){
-  var date = new Date(val);
-  var hour = date.getHours();
-  var minute = date.getMinutes();
+  var hour = val.substring(11,13);
+  var minute = val.substring(14,16);
   
-  if (hour < 10) {
-    hour = '0' + hour;
-  }
-  if (minute < 10) {
-    minute = '0' + minute;
-  }
   var daytime = hour+':'+ minute;
   return(daytime);
 }
