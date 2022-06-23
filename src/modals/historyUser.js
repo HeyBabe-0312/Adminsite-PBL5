@@ -59,6 +59,7 @@ export default function HistoryUser({openHis,modalCloseHis,idHis}) {
               </table>
           </div>
       </div>
+      <DetailHistory infoDetail={infoDetail} idGD={idHoaDon} mnGD={tienHoaDon}/>
   </div>
     )
   }
