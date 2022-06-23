@@ -100,8 +100,17 @@ export default function QliUser() {
       });
   }
   const reloadData = () =>{
-    setLoadData(!loadData);
+    delay(function(){
+      setLoadData(!loadData);
+  }, 500 ); 
   }
+  var delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
   if(userFilter){
   return (
     <div className='bg-qliphim'>
