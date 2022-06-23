@@ -91,16 +91,9 @@ export default function DetailGiochieu({infoDetailGC,closeDetail,idGC}) {
   }
 }
 function xuliDate(val){
-  var date = new Date(val);
-  var hour = date.getHours();
-  var minute = date.getMinutes();
+  var hour = val.substring(11,13);
+  var minute = val.substring(14,16);
   
-  if (hour < 10) {
-    hour = '0' + hour;
-  }
-  if (minute < 10) {
-    minute = '0' + minute;
-  }
   var daytime = hour+':'+ minute;
   return(daytime);
 }
