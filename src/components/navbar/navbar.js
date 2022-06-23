@@ -87,20 +87,6 @@ function Navbar() {
     if(minuteEnd<10) minuteEnd = '0' + minuteEnd;
     return hourEnd + ":" + minuteEnd;
 }
-function xuliDate(val){
-  var date = new Date(val);
-  var hour = date.getHours();
-  var minute = date.getMinutes();
-  
-  if (hour < 10) {
-    hour = '0' + hour;
-  }
-  if (minute < 10) {
-    minute = '0' + minute;
-  }
-  var daytime = hour+':'+ minute;
-  return(daytime);
-}
 function checkTimeNow(data){
   var date = new Date();
   var hour = date.getHours();
@@ -126,19 +112,19 @@ function checkTimeNow(data){
   }
 }
 function xuliDay(val){
-  var date = new Date(val);
-  var year = date.getFullYear();
-  var month = date.getMonth()+1;
-  var dt = date.getDate();
+  var year = val.substring(0,4);
+  var month = val.substring(5,7);
+  var dt = val.substring(8,10);
   
-  if (dt < 10) {
-    dt = '0' + dt;
-  }
-  if (month < 10) {
-    month = '0' + month;
-  }
   var day = year+'-' + month + '-'+dt;
   return(day);
+}
+function xuliDate(val){
+  var hour = val.substring(11,13);
+  var minute = val.substring(14,16);
+  
+  var daytime = hour+':'+ minute;
+  return(daytime);
 }
   const AddNewMess = async (data) => {
     await axios.post('/tb/add',data);
