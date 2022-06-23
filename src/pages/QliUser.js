@@ -15,7 +15,6 @@ export default function QliUser() {
   const [user, getDataUser] = useState(null);
   const [roleData, setRoleData] = useState(null);
   const [loadData, setLoadData] = useState(false);
-  const [updateLoad, setUpdateLoad] = useState(false);
 
   const [infoHis, setStateHis] = useState(false);
   const openHis = (value,id) => {
@@ -40,9 +39,6 @@ export default function QliUser() {
     setCurrentPage(pageNumber);
     setLoadSearchData(!loadSearchData);
   }
-  const reloadData = () =>{
-    setUpdateLoad(!updateLoad);
-  }
   const searchDone = () => setSearch(false);
   useEffect(() => {
     const getAllUser = async () => {
@@ -65,7 +61,7 @@ export default function QliUser() {
       if(userData) setDataUser(userData.result); setSearch(true);setCurrentPage(1);
     }
     refreshData();
-  },[loadData,updateLoad])
+  },[loadData])
   useEffect(()=>{
     const searchUser = () => {
       const indexOfLastPost = currentPage * postsPerPage;
@@ -103,13 +99,16 @@ export default function QliUser() {
         setRoleData(response.data);
       });
   }
+  const reloadData = () =>{
+    setLoadData(!loadData);
+  }
   if(userFilter){
   return (
     <div className='bg-qliphim'>
         <div className='autocomplete'>
           <input type="text" autoComplete='off' id="myInputUser" onKeyDown={_handlerClickEnter} placeholder=" Tìm kiếm user " />
         </div>
-        <AiOutlineReload size={30} className="btn-reload" onClick={function(e) {setLoadData(!loadData);}}/>
+        <AiOutlineReload size={30} className="btn-reload" onClick={function(e) {reloadData()}}/>
     
     <div className='bg-table'>
      <table id="myTable">
