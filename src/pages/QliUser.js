@@ -101,6 +101,7 @@ export default function QliUser() {
   }
   const reloadData = () =>{
     setLoadData(!loadData);
+    setLoadData(!loadData);
   }
   console.log(loadData);
   if(userFilter){
