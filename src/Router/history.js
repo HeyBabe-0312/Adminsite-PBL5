@@ -6,7 +6,7 @@ export default function HistoryBuy({hoverChange,idGD,dateGD,mnGD}) {
     <tr>
         <td>{idGD}</td>
         <td >{xuliDate(dateGD)+" "+xuliDay(dateGD)}</td>
-        <td>{mnGD}.000d</td>
+        <td>{mnGD}000</td>
         <td ><BsEye onMouseOver={function(event){hoverChange(idGD,mnGD)}} onMouseOut={function(event){hoverChange(idGD,mnGD)}}  className="iconfont1" size="20px"/></td>
     </tr>
   )
