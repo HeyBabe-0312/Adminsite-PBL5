@@ -3,7 +3,7 @@ import {RiDeleteBin6Line} from 'react-icons/ri'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import axios from 'axios'
 
-export default function DetailGiochieu({infoDetailGC,closeDetail,idGC,deleteGC}) {
+export default function DetailGiochieu({infoDetailGC,closeDetail,idGC}) {
   const [dataTimeGC,setdataTimeGC] = useState(null);
   const [dataRoom, setDataRoom] = useState(null);
   useEffect(()=>{
@@ -38,7 +38,7 @@ export default function DetailGiochieu({infoDetailGC,closeDetail,idGC,deleteGC})
             await axios.put(`/seat/reset/${idRoom}`);
           }
           window.alert("Delete successfully!");
-          deleteGC(false);
+          window.location.reload();
         } else {
           return;
         }

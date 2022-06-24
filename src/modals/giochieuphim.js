@@ -13,10 +13,6 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
     setGC(val);
     setTimeGCPhim(id);
   }
-  const deleteGC = (val) =>{
-    setGC(val);
-    setAddLoad(!addLoad);
-  }
   useEffect(()=>{
     const getDataLC = () => {
       axios.get('/lc/list').then(res => {
@@ -165,7 +161,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
             )))}
         </div>
     </div>
-    {timeGCPhim?<DetailGiochieu infoDetailGC={infoDetailGC} closeDetail={changeGC} idGC={timeGCPhim} deleteGC={deleteGC}/>:<></>}
+    {timeGCPhim?<DetailGiochieu infoDetailGC={infoDetailGC} closeDetail={changeGC} idGC={timeGCPhim} />:<></>}
 </div>
   )
   }
