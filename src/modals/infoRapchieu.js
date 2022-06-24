@@ -25,9 +25,6 @@ import axios from 'axios'
     //    setListChoose([]);                   // 
     //  }                                      //
     //  console.log(listChoose);               //
-    setTimeout(function(){
-      setLoadSeat(!loadSeat);
-   }, 7000);
      var lengthSeat=0;
      useEffect(() => {
         const getSeatRow = async () => {
@@ -53,7 +50,7 @@ import axios from 'axios'
           loadData();
           getSeatRow();
           getListSeatCol();
-     },[roomId],[loadSeat])
+     },[roomId])
     const compare =( a, b ) => {
         if ( a.Row_No < b.Row_No ){
           return -1;
