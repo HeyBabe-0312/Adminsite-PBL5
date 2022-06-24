@@ -6,7 +6,7 @@ export default function HistoryBuy({hoverChange,idGD,dateGD,mnGD}) {
     <tr>
         <td>{idGD}</td>
         <td >{xuliDate(dateGD)+" "+xuliDay(dateGD)}</td>
-        <td>{xuliMoney(mnGD)}</td>
+        <td>{xuliMoney(mnGD)}.000</td>
         <td ><BsEye onMouseOver={function(event){hoverChange(idGD,mnGD)}} onMouseOut={function(event){hoverChange(idGD,mnGD)}}  className="iconfont1" size="20px"/></td>
     </tr>
   )
@@ -31,6 +31,6 @@ function xuliMoney(val){
   let xuli = "";
   if(length > 6) xuli = val.slice(0,-6)+"."+ val.slice(-6,-3)+"."+ val.slice(-3) 
   else if (length > 3) xuli = val.slice(0,-3)+"."+ val.slice(-3)
-  return xuli + ".000";
+  return xuli;
 }
 
