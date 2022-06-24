@@ -7,7 +7,6 @@ import axios from 'axios'
      const [dataSeatRow, setDataRow] = useState(null);
      const [listSeatCol, setListSeatCol] = useState(null);
      const [tenFilm, setTenFilm] = useState("");
-     const [loadSeat, setLoadSeat] = useState(false);
     //  const [listChoose, setListChoose] = useState([]); //
     //  const [closeRoom, setCloseRoom] = useState(false); //
     //  const changeCloseRoom = () => {        //

@@ -12,6 +12,8 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
   const changeGC = (val,id) => {
     setGC(val);
     setTimeGCPhim(id);
+  }
+  const deleteGC = () =>{
     setAddLoad(!addLoad);
   }
   useEffect(()=>{
@@ -162,7 +164,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
             )))}
         </div>
     </div>
-    {timeGCPhim?<DetailGiochieu infoDetailGC={infoDetailGC} closeDetail={changeGC} idGC={timeGCPhim} />:<></>}
+    {timeGCPhim?<DetailGiochieu infoDetailGC={infoDetailGC} closeDetail={changeGC} idGC={timeGCPhim} deleteGC={deleteGC}/>:<></>}
 </div>
   )
   }
