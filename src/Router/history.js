@@ -28,10 +28,10 @@ function xuliDate(val){
 }
 function xuliMoney(val){
   let length = val.toString().length;
-  console.log(val.toString().length);
   let xuli = "";
   if(length > 6) xuli = val.toString().slice(0,-6)+"."+ val.toString().slice(-6,-3)+"."+ val.toString().slice(-3);
   else if (length > 3) xuli = val.toString().slice(0,-3)+"."+ val.toString().slice(-3);
+  else xuli = val.toString();
   return xuli;
 }
 
