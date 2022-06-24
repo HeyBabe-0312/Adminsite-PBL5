@@ -38,7 +38,7 @@ export default function DetailGiochieu({infoDetailGC,closeDetail,idGC,deleteGC})
             await axios.put(`/seat/reset/${idRoom}`);
           }
           window.alert("Delete successfully!");
-          deleteGC();
+          deleteGC(false);
         } else {
           return;
         }
