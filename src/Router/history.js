@@ -31,7 +31,7 @@ function xuliMoney(val){
   let xuli = "";
   if(length > 6) xuli = val.slice(0,-6)+"."+ val.slice(-6,-3)+"."+ val.slice(-3);
   else if (length > 3) xuli = val.slice(0,-3)+"."+ val.slice(-3);
-  console.log(xuli);
+  console.log(val);
   return xuli;
 }
 
