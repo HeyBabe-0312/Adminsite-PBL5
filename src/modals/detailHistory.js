@@ -28,7 +28,7 @@ export default function DetailHistory({infoDetail,idGD,mnGD}) {
                 <hr className='hr-class'/>
                 <br/>
                 <a className='detail-left'>Tổng</a>
-                <a className='detail-right'>{mnGD}.000</a>
+                <a className='detail-right'>{xuliMoney(mnGD)}.000</a>
             </div>
         </div>
     </div>
@@ -49,4 +49,12 @@ export default function DetailHistory({infoDetail,idGD,mnGD}) {
       </div>
     )}
 }
+}
+function xuliMoney(val){
+  let length = val.toString().length;
+  let xuli = "";
+  if(length > 6) xuli = val.toString().slice(0,-6)+"."+ val.toString().slice(-6,-3)+"."+ val.toString().slice(-3);
+  else if (length > 3) xuli = val.toString().slice(0,-3)+"."+ val.toString().slice(-3);
+  else xuli = val.toString();
+  return xuli;
 }
