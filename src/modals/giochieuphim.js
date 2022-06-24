@@ -12,6 +12,7 @@ export default function Giochieuphim({infogiochieu,modalCloseInfo,time,timeFilm,
   const changeGC = (val,id) => {
     setGC(val);
     setTimeGCPhim(id);
+    setAddLoad(!addLoad);
   }
   useEffect(()=>{
     const getDataLC = () => {
