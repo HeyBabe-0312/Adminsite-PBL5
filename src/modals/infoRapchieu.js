@@ -7,6 +7,7 @@ import axios from 'axios'
      const [dataSeatRow, setDataRow] = useState(null);
      const [listSeatCol, setListSeatCol] = useState(null);
      const [tenFilm, setTenFilm] = useState("");
+     const [loadSeat, setLoadSeat] = useState(false);
     //  const [listChoose, setListChoose] = useState([]); //
     //  const [closeRoom, setCloseRoom] = useState(false); //
     //  const changeCloseRoom = () => {        //
@@ -24,6 +25,9 @@ import axios from 'axios'
     //    setListChoose([]);                   // 
     //  }                                      //
     //  console.log(listChoose);               //
+    setTimeout(function(){
+      setLoadSeat(!loadSeat);
+   }, 7000);
      var lengthSeat=0;
      useEffect(() => {
         const getSeatRow = async () => {
@@ -49,7 +53,7 @@ import axios from 'axios'
           loadData();
           getSeatRow();
           getListSeatCol();
-     },[roomId])
+     },[roomId],[loadSeat])
     const compare =( a, b ) => {
         if ( a.Row_No < b.Row_No ){
           return -1;
